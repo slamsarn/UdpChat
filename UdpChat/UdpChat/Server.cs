@@ -8,12 +8,11 @@ namespace Server {
 
     public class UdpChatServer {
         #region TODOs
-        /* List of clients *DONE*
-         * send login ack to client *DONE*
+        /* List of clients
          * use list to track individual sequence numbers
          * ack all seq to respective client
          * if seq number is missing ask client to resend corresponding packet
-         * on client side hold/save all sent packets until they get acks
+         * on client side hold all sent packets until they get acks
          */
         #endregion
 
