@@ -13,7 +13,8 @@ SocketError feedback *DONE*<br/>
 Send Ack to client on connect *DONE*<br/>
 Send Ack to client on disconnect<br/>
 Send Ack to client on message<br/>
----Below are pure speculation, I did not read up on proper Ack techniques, these steps will involve quite a bit of overhead to confirm data is not corrupted and that it did arrive.---<br/>
+
+---Below is pure speculation, I did not read up on proper Ack techniques, these steps will involve quite a bit of overhead to confirm data is not corrupted and that it did arrive.---<br/>
 Send Ack on msg (client saves all packets until they are acked from the server)<br/>
   -Add sequence number to Packet to keep track of them. <br/>
   -Server responds with full Packet it received, if any data was corrupted or did not arrive the client resends packet until proper Ack arrives. (timed interval might be good here, because of the low frequency nature of chatting)<br/>
